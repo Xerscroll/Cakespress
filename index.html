@@ -1,0 +1,1421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Page Title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- theme roller-->
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="css/themes/cakespress.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  
+    
+    
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+    <style>
+    	#zona-mapa {
+			width: 100%;
+			height: 200px;
+		}
+    </style>
+</head>
+
+
+<body>
+
+
+
+
+<!-- pag 1... mapa-->
+
+    <div data-role="page" id="mapa">
+<div data-role="header">
+    <a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+    	<img src="img/logo22x22.png" style="width: 28px">
+    </a>
+<h1>CAKEspress</h1>
+    <a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+</div>
+   
+    <div role="main" class="ui-content">
+    
+    <h1>CAKEspress cercano</h1>
+    <form>
+     <label for="text-1">Dirección:</label>
+     <input type="text" name="text-1" id="text-1" value="">
+
+</form>
+        <div id="zona-mapa">
+        </div>
+         <a href="#confirmardireccion" data-role="button">¿Estás aquí?</a>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+
+        </div>
+    </div>
+</div>
+    
+
+    
+
+    
+<!-- pag 2... lista pastelerias-->
+  
+    
+<div data-role="page" id="confirmardireccion">
+	<div data-role="header">
+    <a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+    	<img src="img/logo22x22.png" style="width: 28px">
+    </a>
+	<h1>CAKEspress</h1>
+    <a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+	</div>
+    
+    <div data-role="header">
+    <h1>Tu CAKEspress cercano</h1>
+	</div>
+   
+    <ul data-role="listview" data-inset="true" style="margin: 10px;">
+    <li><a href="#pasteleria1">
+    <img src="img/pastelerias80/pasteleria1.jpg"> 
+    <h2>Rossetta</h2>
+    </a>
+    </li>
+
+    <li>
+	<li><a href="#pasteleria2">
+		<img src="img/pastelerias80/pasteleria2.jpg"> 
+    <h2>Mia Pan</h2>
+    </a>
+    
+   <li><a href="#pasteleria3">
+        <img src="img/pastelerias80/pasteleria3.jpg"> 
+    <h2>Casita de Gengibre</h2> 
+    </a>
+
+	<li><a href="#pasteleria4">
+        <img src="img/pastelerias80/pasteleria4.jpg"> 
+    <h2>Dulcelandia</h2> 
+    </a>
+    
+   
+   <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                
+                <a href="#mapa" data-transition="fade" data-theme="" data-icon="back"> Regresar</a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> 
+    
+    
+
+    
+<!-- pag 3... Pasteleria 1-->
+
+<div data-role="page" id="pasteleria1">
+	<div data-role="header">
+		<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+		<img src="img/logo22x22.png" style="width: 28px">
+		</a>
+		<h1>CAKEspress</h1>
+		<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+	</div>
+    
+    <div data-role="header">
+		<h1>Rossetta</h1>
+	</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/pastelerias800/pasteleria1.jpg" style="width:100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Datos de contacto</h3>
+		<p>Dirección: Carrera 12 a 32 d 12</p>
+		<p>Teléfono: 25401256.</p>
+	</div>           
+            
+       
+<ul data-role="listview" data-inset="true" style="margin: 10px;">
+    <li><a href="#producto-1">
+    <img src="img/postres80/oreo-pie.jpg"> 
+    <h2>Pie de Oreo</h2>
+    <p>$2.500</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form>
+    </a>
+    </li>
+    
+    
+    <li><a href="#producto-2">
+    <img src="img/postres80/leche-asada.jpg"> 
+    <h2>Leche Asada</h2>
+    <p>$3.000</p>
+        <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>
+    
+    <li><a href="#producto-3">
+    <img src="img/postres80/pie-agraz.jpg">
+    <h2>Pie de Agraz</h2>
+    <p>$4.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+	</li>
+
+	<li><a href="#producto-4">
+	<img src="img/postres80/pie-chocolate.jpg"> 
+    <h2>Pie de Chocolate</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>
+    
+    <li><a href="#producto-5">
+    <img src="img/postres80/pastel-tres-leches.jpg"> 
+    <h2>Postre tres leches</h2>
+    <p>$3.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>
+    
+    <li><a href="#producto-6">
+    <img src="img/postres80/arroz-leche.jpg">
+    <h2>Arroz de leche</h2>
+    <p>$2.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+    </form></a>
+    </li>
+    
+	<li><a href="#producto-7">
+    <img src="img/postres80/gelatina-yogurt.jpg">
+    <h2>Gelatina de Yogurt</h2>
+    <p>$4.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+	</li>
+
+	<li><a href="#producto-8">
+	<img src="img/postres80/merengon.jpg"> 
+    <h2>Merengón</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>  
+    
+	
+    <li><a href="#producto-9">
+    <img src="img/postres80/chocoflan.jpg">
+    <h2>Chocoflan</h2>
+    <p>$4.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+	</li>
+
+	<li><a href="#producto-10">
+	<img src="img/postres80/flan-maracuya.jpg"> 
+    <h2>Flan de Maracuyá</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li> 
+    
+	<li><a href="#producto-11">
+    <img src="img/postres80/fresas-crema.jpg">
+    <h2>Fresas con Crema</h2>
+    <p>$2.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>    
+    
+</ul>
+
+	<div class="ui-grid-b ui-responsive">
+		<div class="ui-block-b" style="margin: 20px;"><h2>Valor total: $30.000</h2></div>  
+
+		<div data-theme="a" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#pedir" data-icon="phone">Pedir</a>
+					</li>
+					<li>
+						<a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back">Regresar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<!-- pag 3... Pasteleria 2-->
+
+<div data-role="page" id="pasteleria2">
+	<div data-role="header">
+		<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+		<img src="img/logo22x22.png" style="width: 28px">
+		</a>
+		<h1>CAKEspress</h1>
+		<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+	</div>
+    
+    <div data-role="header">
+		<h1>Mia Pan</h1>
+	</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/pastelerias800/pasteleria2.jpg" style="width:100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Datos de contacto</h3>
+		<p>Dirección: Calle 7 b 33 a 11</p>
+		<p>Teléfono: 34401200</p>
+	</div>           
+            
+       
+<ul data-role="listview" data-inset="true" style="margin: 10px;">
+    <li><a href="#producto-1">
+    <img src="img/postres80/oreo-pie.jpg"> 
+    <h2>Pie de Oreo</h2>
+    <p>$2.500</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form>
+    </a>
+    </li>
+    
+
+    <li><a href="#producto-9">
+    <img src="img/postres80/chocoflan.jpg">
+    <h2>Chocoflan</h2>
+    <p>$4.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+	</li>
+
+	<li><a href="#producto-10">
+	<img src="img/postres80/flan-maracuya.jpg"> 
+    <h2>Flan de Maracuyá</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li> 
+    
+	<li><a href="#producto-11">
+    <img src="img/postres80/fresas-crema.jpg">
+    <h2>Fresas con Crema</h2>
+    <p>$2.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>    
+    
+</ul>
+
+	<div class="ui-grid-b ui-responsive">
+		<div class="ui-block-b" style="margin: 20px;"><h2>Valor total: $30.000</h2></div>  
+
+		<div data-theme="a" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#pedir" data-icon="phone">Pedir</a>
+					</li>
+					<li>
+						<a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back">Regresar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!-- pag 3... Pasteleria 3-->
+
+<div data-role="page" id="pasteleria3">
+	<div data-role="header">
+		<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+		<img src="img/logo22x22.png" style="width: 28px">
+		</a>
+		<h1>CAKEspress</h1>
+		<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+	</div>
+    
+    <div data-role="header">
+		<h1> Casita de Gengibre</h1>
+	</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/pastelerias800/pasteleria3.jpg" style="width:100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Datos de contacto</h3>
+		<p>Dirección: Calle 2 sur b 12 a 61</p>
+		<p>Teléfono: 2725566</p>
+	</div>           
+            
+       
+<ul data-role="listview" data-inset="true" style="margin: 10px;">
+    <li><a href="#producto-1">
+    <img src="img/postres80/oreo-pie.jpg"> 
+    <h2>Pie de Oreo</h2>
+    <p>$2.500</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form>
+    </a>
+    </li>
+    
+    
+    <li><a href="#producto-2">
+    <img src="img/postres80/leche-asada.jpg"> 
+    <h2>Leche Asada</h2>
+    <p>$3.000</p>
+        <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>
+    
+    <li><a href="#producto-3">
+    <img src="img/postres80/pie-agraz.jpg">
+    <h2>Pie de Agraz</h2>
+    <p>$4.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+	</li>
+
+	<li><a href="#producto-4">
+	<img src="img/postres80/pie-chocolate.jpg"> 
+    <h2>Pie de Chocolate</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>
+    
+    <li><a href="#producto-5">
+    <img src="img/postres80/pastel-tres-leches.jpg"> 
+    <h2>Postre tres leches</h2>
+    <p>$3.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>
+    
+    <li><a href="#producto-6">
+    <img src="img/postres80/arroz-leche.jpg">
+    <h2>Arroz de leche</h2>
+    <p>$2.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+    </form></a>
+    </li>
+    
+
+	<li><a href="#producto-10">
+	<img src="img/postres80/flan-maracuya.jpg"> 
+    <h2>Flan de Maracuyá</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li> 
+    
+	<li><a href="#producto-11">
+    <img src="img/postres80/fresas-crema.jpg">
+    <h2>Fresas con Crema</h2>
+    <p>$2.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>    
+    
+</ul>
+
+	<div class="ui-grid-b ui-responsive">
+		<div class="ui-block-b" style="margin: 20px;"><h2>Valor total: $30.000</h2></div>  
+
+		<div data-theme="a" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#pedir" data-icon="phone">Pedir</a>
+					</li>
+					<li>
+						<a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back">Regresar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!-- pag 3... Pasteleria 4-->
+
+<div data-role="page" id="pasteleria4">
+	<div data-role="header">
+		<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+		<img src="img/logo22x22.png" style="width: 28px">
+		</a>
+		<h1>CAKEspress</h1>
+		<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+	</div>
+    
+    <div data-role="header">
+		<h1> Dulcelandia</h1>
+	</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/pastelerias800/pasteleria4.jpg" style="width:100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Datos de contacto</h3>
+		<p>Dirección: Diagonal 120 b 23 a 11</p>
+		<p>Teléfono: 6012200</p>
+	</div>           
+            
+       
+<ul data-role="listview" data-inset="true" style="margin: 10px;">
+
+    
+    <li><a href="#producto-3">
+    <img src="img/postres80/pie-agraz.jpg">
+    <h2>Pie de Agraz</h2>
+    <p>$4.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+	</li>
+
+	<li><a href="#producto-4">
+	<img src="img/postres80/pie-chocolate.jpg"> 
+    <h2>Pie de Chocolate</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>
+    
+    
+    <li><a href="#producto-6">
+    <img src="img/postres80/arroz-leche.jpg">
+    <h2>Arroz de leche</h2>
+    <p>$2.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+    </form></a>
+    </li>
+    
+
+	<li><a href="#producto-10">
+	<img src="img/postres80/flan-maracuya.jpg"> 
+    <h2>Flan de Maracuyá</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li> 
+	
+	<li><a href="#producto-8">
+	<img src="img/postres80/merengon.jpg"> 
+    <h2>Merengón</h2>
+    <p>$3.500</p>
+	<form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+    </li>  
+    
+	
+    <li><a href="#producto-9">
+    <img src="img/postres80/chocoflan.jpg">
+    <h2>Chocoflan</h2>
+    <p>$4.000</p>
+    <form>
+    <label for="slider-1"></label>
+    <input type="range" name="slider-1" id="slider-1" min="0" max="10" value="0">
+	</form></a>
+	</li>
+ 
+    
+</ul>
+
+	<div class="ui-grid-b ui-responsive">
+		<div class="ui-block-b" style="margin: 20px;"><h2>Valor total: $30.000</h2></div>  
+
+		<div data-theme="a" data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#pedir" data-icon="phone">Pedir</a>
+					</li>
+					<li>
+						<a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back">Regresar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+     
+<!-- pag 4...características - Producto 1 -->  
+    
+<div data-role="page" id="producto-1">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Pie de oreo</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/paoreo-pie.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Chocolate español</li>
+      <li>Vainilla natural</li>
+	  <li>Galleta</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $2.500</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back">
+                        Regresar
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div>
+    
+<!-- pag 4...características - Producto 2 -->  
+    
+<div data-role="page" id="producto-2">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Leche Asada</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/leche-asada.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Crema de leche</li>
+      <li>Leche condensada</li>
+	  <li>Queso crema</li>
+      <li>Huevos</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $3.000</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back">
+                        Regresar
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div>
+
+
+<!-- pag 4...características - Producto 3 -->  
+    
+<div data-role="page" id="producto-3">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Pie de Agraz</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/pie-agraz.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Chocolate blanco</li>
+      <li>Yogur natural</li>
+	  <li>Galleta</li>
+      <li>Gelatina</li>
+      <li>Dulce de Agraz</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $4.000</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div>
+
+<!-- pag 4...características - Producto 4 -->  
+    
+<div data-role="page" id="producto-4">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Pie de Chocolate</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/pie-chocolate.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Chocolate</li>
+      <li>Galleta</li>
+	  <li>Gelatina</li>
+      <li>Crema de leche</li>
+      <li>Chocolate rallado</li>
+      <li>Frambuesas</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $3.500</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div>
+
+<!-- pag 4...características - Producto 5 -->  
+    
+<div data-role="page" id="producto-5">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Postre tres leches</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/postre-tres-leches.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Masa blanca de galletas</li>
+      <li>Leche condensada</li>
+	  <li>Crema de leche</li>
+      <li>Leche natural</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $3.000</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div>
+
+<!-- pag 4...características - Producto 6 -->  
+    
+<div data-role="page" id="producto-6">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Arroz de Leche</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/arroz-leche.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Arroz</li>
+      <li>Leche</li>
+	  <li>Leche condensada</li>
+      <li>Uvas pasas</li>
+      <li>Coco</li>
+      <li>Canela</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $2.000</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div>
+    
+<!-- pag 4...características - Producto 7 -->  
+    
+<div data-role="page" id="producto-7">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Gelatina de Yogurt</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/gelatina-yogurt.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Gelatina</li>
+      <li>Yorgurt natural</li>
+	  <li>Fresas</li>
+      <li>Moras</li>
+	  <li>Frambuesas</li>
+      <li>Dulce de fresas</li>
+      </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $4.000</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div> 
+    
+<!-- pag 4...características - Producto 8 -->  
+    
+<div data-role="page" id="producto-8">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Merengón</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/merengon.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Fresas</li>
+      <li>Guanabana</li>
+	  <li>Melocotón</li>
+      <li>Crema batida</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $3.500</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div> 
+	
+<!-- pag 4...características - Producto 9 -->  
+    
+<div data-role="page" id="producto-9">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Chocoflan</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/chocoflan.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Cocoa</li>
+      <li>Almendras</li>
+	  <li>Crema de leche</li>
+      <li>Masa blanca</li>
+      <li>Leche condensada</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $4.000</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div> 	
+	
+<!-- pag 4...características - Producto 10 -->  
+    
+<div data-role="page" id="producto-10">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Flan de Maracuyá</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/flan-maracuya.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Maracuyá</li>
+      <li>Gelatina</li>
+	  <li>Leche condensada</li>
+      <li>Crema de leche</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $3.500</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div> 		
+	
+<!-- pag 4...características - Producto 11 -->  
+    
+<div data-role="page" id="producto-11">
+		<div data-role="header">
+			<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+		<h1>CAKEspress</h1>
+			<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+		</div>
+    
+        <div data-role="header">
+			<h1> Fresas con Crema</h1>
+		</div>
+    
+   <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+             <a href="#pasteleria1"><img src="img/postres800/fresas-crema.jpg" style="width: 100%"></a>
+             </div> 
+        </div>
+    </div>
+            
+    <div class="ui-body ui-body-a ui-corner-all">
+	<h3>Características</h3>
+      <ul>
+	  <li>Fresas jugosas</li>
+      <li>Crema de leche</li>
+	  <li>Crema chantilli</li>
+	  </ul>
+	</div>           
+              
+    <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-b" style="margin: 20px;"><h2>Valor: $2.000</h2></div>  
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pedir" class="ui-btn" data-icon="phone">Pedir</a>
+                </li>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	</div>
+    
+</div> 
+	
+	
+	
+ 
+ <!-- pag 5...Pedir-->
+
+<div data-role="page" id="pedir">
+	<div data-role="header">
+		<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+	<h1>CAKEspress</h1>
+		<a href="#datostarjeta" class="ui-btn-right ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-check">Continuar</a>
+	</div>
+ 
+	<div data-role="header">
+		<h1> Solicitar Pedido</h1>
+	</div>
+ 
+	<form style="margin: 20px;">
+		<div class="ui-field-contain">
+			 <label for="text-12">Nombre</label>
+			 <input type="text" name="text-12" id="text-12" value="">
+		</div>
+		<div class="ui-field-contain">
+			 <label for="text-13">Teléfono</label>
+			 <input type="text" data-clear-btn="true" name="text-13" id="text-13" value="">
+		</div>
+		 <div class="ui-field-contain">
+			 <label for="text-12">Dirección</label>
+			 <input type="text" name="text-12" id="text-12" value="">
+		</div>
+		<div class="ui-field-contain">
+			 <label for="text-13">Ciudad</label>
+			 <input type="text" data-clear-btn="true" name="text-13" id="text-13" value="">
+		</div>
+	   
+	</form><br>
+	
+	<form style="margin: 20px;">
+	<fieldset data-role="controlgroup">
+		<legend>Seleccione Modo de Pago:</legend>
+		<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+		<label for="radio-choice-v-2a">Tarjeta de crédito</label> 
+		<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+		<label for="radio-choice-v-2b">Tarjeta débito</label>
+		
+	</fieldset>
+	</form>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	
+</div>
+
+
+
+<!-- pag 6... Datos Tarjeta-->
+
+<div data-role="page" id="datostarjeta">
+	<div data-role="header">
+		<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+				<img src="img/logo22x22.png" style="width: 28px">
+			</a>
+	<h1>CAKEspress</h1>
+		<a href="#comprado" class="ui-btn-right ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-check">Continuar</a>
+	</div>
+ 
+	<div data-role="header">
+		<h1> Información de Tarjeta</h1>
+	</div>
+ 
+	<form style="margin: 20px;">
+		<div class="ui-field-contain">
+			 <label for="text-12">Número de Tarjeta</label>
+			 <input type="text" name="text-12" id="text-12" value="">
+		</div>
+		<div class="ui-field-contain">
+			 <label for="text-13">Fecha de Expiración</label>
+			 <input type="date" data-clear-btn="true" name="text-13" id="text-13" value="">
+		</div>
+		 <div class="ui-field-contain">
+			 <label for="text-12">Nombre Completo</label>
+			 <input type="text" name="text-12" id="text-12" value="">
+		</div>
+		<div class="ui-field-contain">
+			 <label for="text-13">Número de Seguridad</label>
+			 <input name="text-13" type="text" id="text-13" value="" maxlength="4" data-clear-btn="true">
+		</div>
+	   
+	</form><br>
+	<a href="#comprado" data-role="button">Ordenar</a>
+
+     <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	
+</div>
+   
+<!-- pag 6... Producto Comprado-->
+
+<div data-role="page" id="comprado">
+	<div data-role="header">
+		<a href="#mapa" class="ui-btn ui-btn-corner-all" style="padding:0">
+			<img src="img/logo22x22.png" style="width: 28px">
+		</a>
+		<h1>CAKEspress</h1>
+		<a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left ui-corner-all">3</a>
+	</div>
+ 
+	<div data-role="header">
+		<h1> Gracias por su Compra</h1>
+	</div>
+ 
+	<br>
+	<div class="ui-body ui-body-a ui-corner-all">
+		<p style="text-align: center;">Su pedido ha sido realizado con éxito.</p>
+		<p style="text-align: center;">Llegará aproximadamente en 20 minutos.</p>
+	</div><br>
+	<a href="#mapa" data-role="button">Volver al menú principal </a> 
+	
+
+     <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#" onclick="history.back();" data-transition="fade" data-theme="" data-icon="back"> Regresar</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	
+</div>
+
+    
+    
+
+
+<script>
+$( document ).on( "pagecreate", "#mapa", function() {
+    var defaultLatLng = new google.maps.LatLng(4.6986827,-74.0893802);
+    if ( navigator.geolocation ) {
+        function success(pos) {
+            // Location found, show map with these coordinates
+            drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+        }
+        function fail(error) {
+            drawMap(defaultLatLng);  // Failed to find location, show default map
+        }
+        // Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+        navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+    } else {
+        drawMap(defaultLatLng);  // No geolocation support, show default map
+    }
+    function drawMap(latlng) {
+        var myOptions = {
+            zoom: 16,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("zona-mapa"), myOptions);
+        // Add an overlay to the map of current lat/lng
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: "Ud está aquí"
+        });
+    }
+});
+</script>
+
+
+
+
+
+</body>
+</html>
